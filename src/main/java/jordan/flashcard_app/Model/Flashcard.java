@@ -3,8 +3,10 @@ package jordan.flashcard_app.Model;
 import jakarta.persistence.*;
 import jordan.flashcard_app.Enum.FlashcardStatus;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "flashcard")
 public class Flashcard {
@@ -30,7 +32,5 @@ public class Flashcard {
     private Deck deck;
 
     // Constructor
-    public Flashcard() {
-    }
 
 }

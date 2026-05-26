@@ -2,8 +2,10 @@ package jordan.flashcard_app.Model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
@@ -25,7 +27,6 @@ public class User {
     // Relationships
 
     // constructor
-    public User() {
-    }
+
 
 }
