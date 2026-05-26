@@ -1,8 +1,6 @@
 package jordan.flashcard_app.Model;
 
 import jakarta.persistence.*;
-import java.time.LocalDateTime;
-
 
 @Entity
 @Table(name = "deck")
@@ -13,14 +11,14 @@ public class Deck {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
     @Column(name = "description")
     private String description;
 
     @Column(name = "color_code")
-    private String color_code;
+    private String colorCode;
 
     // constructor
     public Deck() {
