@@ -20,6 +20,11 @@ public class Deck {
     @Column(name = "color_code")
     private String colorCode;
 
+    // Relationships
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
+
     // constructor
     public Deck() {
     }

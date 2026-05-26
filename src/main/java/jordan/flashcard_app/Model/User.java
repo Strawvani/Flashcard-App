@@ -2,6 +2,8 @@ package jordan.flashcard_app.Model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -19,6 +21,8 @@ public class User {
 
     @Column(name = "email", nullable = false, unique = true)
     private String email;
+
+    // Relationships
 
     // constructor
     public User() {

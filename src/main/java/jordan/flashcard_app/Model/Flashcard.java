@@ -22,6 +22,11 @@ public class Flashcard {
     @Column(name = "status", nullable = false)
     private FlashcardStatus status = FlashcardStatus.NEW;
 
+    // Relationships
+    @ManyToOne
+    @JoinColumn(name = "deck_id", nullable = false)
+    private Deck deck;
+
     // Constructor
     public Flashcard() {
     }
