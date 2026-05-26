@@ -2,7 +2,9 @@ package jordan.flashcard_app.Model;
 
 import jakarta.persistence.*;
 import jordan.flashcard_app.Enum.FlashcardStatus;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "flashcard")
 public class Flashcard {
@@ -30,7 +32,5 @@ public class Flashcard {
     // Constructor
     public Flashcard() {
     }
-
-    // Getters and Setters
 
 }

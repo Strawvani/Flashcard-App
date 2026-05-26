@@ -1,7 +1,9 @@
 package jordan.flashcard_app.Model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "category")
 public class Category {
@@ -22,7 +24,5 @@ public class Category {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
-
-    // getters and setters
 
 }

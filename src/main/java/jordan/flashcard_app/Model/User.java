@@ -1,9 +1,9 @@
 package jordan.flashcard_app.Model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
-import java.util.List;
-
+@Data
 @Entity
 @Table(name = "users")
 public class User {
@@ -27,7 +27,5 @@ public class User {
     // constructor
     public User() {
     }
-
-    // getters and setters
 
 }
