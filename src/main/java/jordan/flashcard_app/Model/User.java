@@ -26,7 +26,4 @@ public class User {
 
     // Relationships
 
-    // constructor
-
-
 }

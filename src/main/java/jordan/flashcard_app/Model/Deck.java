@@ -29,6 +29,4 @@ public class Deck {
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
-    // constructor
-
 }
