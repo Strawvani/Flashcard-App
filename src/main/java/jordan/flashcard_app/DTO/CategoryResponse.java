@@ -1,5 +1,6 @@
 package jordan.flashcard_app.DTO;
 
+import jordan.flashcard_app.Model.Category;
 import lombok.Builder;
 import lombok.Data;
 
